@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+}
+
+.fancy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.fancy-card {
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fancy-card:hover {
+  transform: translateY(-5px);
+}
+
+.fancy-title {
+  font-size: 24px;
+  color: #0d47a1;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.fancy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fancy-form input,
+.fancy-form select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.fancy-form input:focus,
+.fancy-form select:focus {
+  border-color: #42a5f5;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.fancy-form button {
+  padding: 14px;
+  font-size: 16px;
+  background-color: #42a5f5;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.fancy-form button:hover {
+  background-color: #1e88e5;
+}

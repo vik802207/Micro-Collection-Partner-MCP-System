@@ -1,0 +1,455 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mcp-dashboard {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .dashboard-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #3b3b98;
+  }
+  
+  .no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .table-wrapper {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    overflow-x: auto;
+  }
+  
+  .fancy-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .fancy-table thead {
+    background: #3b3b98;
+    color: rgb(13, 110, 112);
+  }
+  
+  .fancy-table th, .fancy-table td {
+    padding: 16px 20px;
+    text-align: left;
+  }
+  
+  .fancy-table tbody tr {
+    transition: background 0.3s ease;
+  }
+  
+  .fancy-table tbody tr:hover {
+    background: rgba(59, 59, 152, 0.1);
+  }
+  
+  .status-badge {
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .status-badge.active {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status-badge.inactive {
+    background-color: #b68488;
+    color: #721c24;
+  }
+  .delete-btn {
+    background: linear-gradient(135deg, #b10609, #f96c6c);
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .delete-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff3b3b, #e64545);
+    box-shadow: 0 6px 14px rgba(255, 0, 0, 0.4);
+  }
+  .fancy-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fancy-table th,
+  .fancy-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .fancy-table th {
+    background-color: #c19dee;
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e60000;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .status-badge.active {
+    background-color: #28a745;
+  }
+  
+  .status-badge.inactive {
+    background-color: #6c757d;
+  }
+  
+  /* Modal styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .modal-content input,
+  .modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .save-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn:hover {
+  background-color: #ddd;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 35px 30px;
+  width: 90%;
+  max-width: 460px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  animation: glowUp 0.4s ease-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.modal-content::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #00f0ff, #ff00c8);
+  filter: blur(15px);
+  opacity: 0.4;
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px #00f0ff, 0 0 15px #00f0ff;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.save-btn,
+.cancel-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.save-btn {
+  background: linear-gradient(45deg, #00f0ff, #0aefff);
+  color: #000;
+  box-shadow: 0 0 10px #0aefff;
+}
+
+.cancel-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.save-btn:hover {
+  box-shadow: 0 0 15px #0aefff, 0 0 25px #0aefff;
+  transform: scale(1.05);
+}
+
+.cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+@keyframes glowUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.edit-btn {
+  background-color: #4b7bec;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #3867d6;
+}
+.fund-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.fund-btn:hover {
+  background-color: #45a049;
+}
+
+
+  
+  

@@ -1,0 +1,79 @@
+.pp-login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .pp-login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 380px;
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: zoomFade 0.7s ease forwards;
+  }
+  
+  .pp-login-card h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .pp-subtext {
+    font-size: 14px;
+    color: #d0d0d0;
+    margin-bottom: 24px;
+  }
+  
+  .pp-login-card input {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .pp-login-card input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(44, 83, 100, 0.7);
+  }
+  
+  .pp-login-card button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 18px;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .pp-login-card button:hover {
+    background: linear-gradient(to right, #28a745, #8bc34a);
+  }
+  
+  @keyframes zoomFade {
+    from {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
