@@ -83,19 +83,29 @@ Responsive design for mobile
 
 Beautiful and minimal login/signup forms
 ## 📸 Screenshots
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(343).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(344).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(345).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(346).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(347).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(348).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(349).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(350).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(351).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(352).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(353).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(354).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(355).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(357).png?raw=true)
-![Alt text](https://github.com/vik802207/credit-loan-system/blob/master/img/Screenshot%20(358).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(343).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(344).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(345).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(346).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(347).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(348).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(349).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(350).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(351).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(352).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(353).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(354).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(355).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(357).png?raw=true)
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%20(358).png?raw=true)
+## Database
+![Alt text](https://github.com/vik802207/Micro-Collection-Partner-MCP-System/blob/main/img/Screenshot%202025-04-10%20011148.png?raw=true)
+## 🤝 Contributing
+PRs are welcome! For major changes, please open an issue first to discuss what you would like to change.
+## 📄 License
+This project is licensed under the MIT License.
+## 👨‍💻 Author
+Developed by Vikash Gupta 📧 Contact: vikashg802207@gmail.com
+
+
 
