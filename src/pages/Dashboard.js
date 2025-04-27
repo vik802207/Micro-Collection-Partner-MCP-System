@@ -13,7 +13,7 @@ const Dashboard = () => {
     if (!token) return navigate("/login");
 
     axios
-      .get("http://localhost:8000/api/user/profile", { headers: { Authorization: `Bearer ${token}` } })
+      .get("https://mcp-backend-9mv6.onrender.com/api/user/profile", { headers: { Authorization: `Bearer ${token}` } })
       .then((res) => setUser(res.data))
       .catch(() =>{
         alert("Error");
