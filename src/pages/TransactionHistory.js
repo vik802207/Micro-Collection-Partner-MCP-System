@@ -10,7 +10,7 @@ function TransactionHistory() {
     if (!token) return;
 
     axios
-      .get("http://localhost:8000/api/transactions/fundadds", {
+      .get("https://mcp-backend-9mv6.onrender.com/api/transactions/fundadds", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setTransactions(res.data))
