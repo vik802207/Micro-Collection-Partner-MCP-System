@@ -18,7 +18,7 @@ function FetchallPatner() {
 
     if (!token) return navigate("/dashboard");
     axios
-      .get("http://localhost:8000/api/fetch/fetchallpartner", {
+      .get("https://mcp-backend-9mv6.onrender.com/api/fetch/fetchallpartner", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) =>{ 
@@ -35,7 +35,7 @@ function FetchallPatner() {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:8000/api/addfundstopickuppartner/add/${partnerId}`,
+        `https://mcp-backend-9mv6.onrender.com/api/addfundstopickuppartner/add/${partnerId}`,
         { amount },
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -60,7 +60,7 @@ function FetchallPatner() {
     try {
       const token = localStorage.getItem("token");
       await axios.delete(
-        `http://localhost:8000/api/deletemcppatner/delete/${partnerId}`,
+        `https://mcp-backend-9mv6.onrender.com/api/deletemcppatner/delete/${partnerId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -77,7 +77,7 @@ function FetchallPatner() {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:8000/api/orderbymcp/add/${selectedPartner}`,
+        `https://mcp-backend-9mv6.onrender.com/api/orderbymcp/add/${selectedPartner}`,
         {
          paymentInput:paymentInput,
          role:roleInput,
