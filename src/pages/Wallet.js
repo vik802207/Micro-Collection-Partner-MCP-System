@@ -13,7 +13,7 @@ const Wallet = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://localhost:8000/api/wallet/balance", { headers: { Authorization: `Bearer ${token}` } })
+      .get("https://mcp-backend-9mv6.onrender.com/api/wallet/balance", { headers: { Authorization: `Bearer ${token}` } })
       .then((res) => setBalance(res.data.walletBalance))
       .catch((err) => console.log(err));
   }, []);
@@ -21,7 +21,7 @@ const Wallet = () => {
   const handlePaymentSuccess = async (response) => {
     const token = localStorage.getItem("token");
     try{await axios.post(
-      "http://localhost:8000/api/wallet/add-funds",
+      "https://mcp-backend-9mv6.onrender.com/api/wallet/add-funds",
       { amount: parseInt(amount), paymentId: response.razorpay_payment_id, },
       { headers: { Authorization: `Bearer ${token}` } }
     )
