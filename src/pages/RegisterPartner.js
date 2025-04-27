@@ -10,7 +10,7 @@ function RegisterPartner() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/pickuppartner/register", form);
+      await axios.post("https://mcp-backend-9mv6.onrender.com/api/pickuppartner/register", form);
       alert("Registered successfully! Please login.");
       navigate("/loginpartner");
     } catch (err) {
