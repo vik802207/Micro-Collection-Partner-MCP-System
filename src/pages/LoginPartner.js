@@ -10,7 +10,7 @@ function LoginPartner() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/api/pickuppartner/login", form);
+      const res = await axios.post("https://mcp-backend-9mv6.onrender.com/api/pickuppartner/login", form);
       localStorage.setItem("token", res.data.token);
       alert("Login successful!");
       navigate("/dashboardpickuppartner");
