@@ -15,7 +15,7 @@ function AddPartner() {
 
     try {
           await axios.post(
-        "http://localhost:8000/api/pickup/addPartner",
+        "https://mcp-backend-9mv6.onrender.com/api/pickup/addPartner",
         {
           name: user.name,
           email: user.email,
