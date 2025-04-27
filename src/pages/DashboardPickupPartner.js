@@ -11,7 +11,7 @@ function DashboardPickupPartner() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/orderme/me", {
+        const res = await axios.get("https://mcp-backend-9mv6.onrender.com/api/orderme/me", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setPartner(res.data);
@@ -28,7 +28,7 @@ function DashboardPickupPartner() {
       const token = localStorage.getItem("token");
      
       await axios.patch(
-        `http://localhost:8000/api/updatestatus/${orderId}/status`,
+        `https://mcp-backend-9mv6.onrender.com/api/updatestatus/${orderId}/status`,
         { status: newStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );
