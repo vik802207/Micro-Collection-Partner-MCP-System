@@ -49,8 +49,8 @@ git clone https://github.com/vik802207/Micro-Collection-Partner-MCP-System.git
 cd Micro-Collection-Partner-MCP-System
 ## 📁 Folder Structure
 
-### Frontend (`src/`)
-
+## Frontend (`src/`)
+```bash
 src/
 ├── components/                    # Reusable components (if any)
 └── pages/                         # Main views and styles
@@ -76,6 +76,7 @@ src/
     ├── RegisterPartner.css
     ├── TransactionHistory.js      # Transaction history table
     ├── TransactionHistory.css
+```
 ### 📸 UI Highlights
 Clean dashboards for both roles
 
